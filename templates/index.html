@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AeroManage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <h1>✈️ AeroManage</h1>
+    <h2>Airplane Management System</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p id="message"></p>
+
+</div>
+
+<script>
+function login() {
+
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    if (username === "admin" && password === "admin123") {
+        window.location.href = "/dashboard";
+    } else {
+        document.getElementById("message").innerText =
+            "Username: admin | Password: admin123";
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aircraft Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h1>🛩 AeroManage</h1>
+    <p>Aircraft Management</p>
+</header>
+
+<nav>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/flights">Flights</a>
+    <a href="/aircraft">Aircraft</a>
+    <a href="/crew">Crew</a>
+    <a href="/passengers">Passengers</a>
+</nav>
+
+<main>
+
+<h2>🛩 Aircraft Management</h2>
+
+<table>
+
+<tr>
+    <th>Aircraft ID</th>
+    <th>Model</th>
+    <th>Manufacturer</th>
+    <th>Capacity</th>
+    <th>Status</th>
+</tr>
+
+<tr>
+    <td>A001</td>
+    <td>A320</td>
+    <td>Airbus</td>
+    <td>180</td>
+    <td>Available</td>
+</tr>
+
+<tr>
+    <td>A002</td>
+    <td>737-800</td>
+    <td>Boeing</td>
+    <td>189</td>
+    <td>In Flight</td>
+</tr>
+
+<tr>
+    <td>A003</td>
+    <td>A321</td>
+    <td>Airbus</td>
+    <td>220</td>
+    <td>Maintenance</td>
+</tr>
+
+<tr>
+    <td>A004</td>
+    <td>787-9</td>
+    <td>Boeing</td>
+    <td>296</td>
+    <td>Available</td>
+</tr>
+
+<tr>
+    <td>A005</td>
+    <td>A350</td>
+    <td>Airbus</td>
+    <td>325</td>
+    <td>In Flight</td>
+</tr>
+
+</table>
+
+</main>
+
+</body>
+</html>

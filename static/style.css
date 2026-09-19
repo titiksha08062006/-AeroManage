@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+header {
+    background: #12355b;
+    color: white;
+    padding: 22px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 8px 0 0;
+}
+
+nav {
+    background: #1d5d8f;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+main h2 {
+    color: #12355b;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 220px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.card h2 {
+    font-size: 32px;
+    margin: 5px;
+    color: #1d5d8f;
+}
+
+.card p {
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+th,
+td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #12355b;
+    color: white;
+}
+
+tr:hover {
+    background: #f1f5f9;
+}
+
+.login-box {
+    width: 380px;
+    margin: 100px auto;
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px #bbb;
+}
+
+.login-box h1 {
+    color: #12355b;
+}
+
+.login-box input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-box button {
+    padding: 12px 35px;
+    background: #1d5d8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-box button:hover {
+    background: #12355b;
+}
+
+#message {
+    color: red;
+}

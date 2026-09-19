@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AeroManage Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h1>✈️ AeroManage</h1>
+    <p>Airplane Management System</p>
+</header>
+
+<nav>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/flights">Flights</a>
+    <a href="/aircraft">Aircraft</a>
+    <a href="/crew">Crew</a>
+    <a href="/passengers">Passengers</a>
+</nav>
+
+<main>
+
+<h2>Dashboard</h2>
+
+<div class="cards">
+
+    <div class="card">
+        <h2>24</h2>
+        <p>✈️ Total Flights</p>
+    </div>
+
+    <div class="card">
+        <h2>12</h2>
+        <p>🛩 Aircraft</p>
+    </div>
+
+    <div class="card">
+        <h2>36</h2>
+        <p>👨‍✈️ Crew Members</p>
+    </div>
+
+    <div class="card">
+        <h2>148</h2>
+        <p>🧳 Passengers</p>
+    </div>
+
+</div>
+
+<h2>Upcoming Flights</h2>
+
+<table>
+<tr>
+    <th>Flight No.</th>
+    <th>From</th>
+    <th>To</th>
+    <th>Date</th>
+    <th>Status</th>
+</tr>
+
+<tr>
+    <td>AM101</td>
+    <td>Mumbai</td>
+    <td>Delhi</td>
+    <td>20-09-2026</td>
+    <td>Scheduled</td>
+</tr>
+
+<tr>
+    <td>AM202</td>
+    <td>Delhi</td>
+    <td>Bengaluru</td>
+    <td>20-09-2026</td>
+    <td>Boarding</td>
+</tr>
+
+<tr>
+    <td>AM303</td>
+    <td>Pune</td>
+    <td>Dubai</td>
+    <td>21-09-2026</td>
+    <td>Scheduled</td>
+</tr>
+
+<tr>
+    <td>AM404</td>
+    <td>Chennai</td>
+    <td>Mumbai</td>
+    <td>21-09-2026</td>
+    <td>Delayed</td>
+</tr>
+
+</table>
+
+</main>
+
+</body>
+</html>
