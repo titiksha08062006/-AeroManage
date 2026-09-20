@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aeromanage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aeromanage
+  template:
+    metadata:
+      labels:
+        app: aeromanage
+    spec:
+      containers:
+        - name: aeromanage
+          image: aeromanage:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5000
